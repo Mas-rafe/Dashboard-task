@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const EditProfile = () => {
-  // ===== Initial Profile Data (local JSON) =====
+ 
   const initialProfile = {
     image: "https://i.pravatar.cc/150?img=32",
     fullName: "Jane D.",
@@ -12,13 +12,13 @@ const EditProfile = () => {
 
   const [profile, setProfile] = useState(initialProfile);
 
-  // ===== Handle Input Change =====
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProfile({ ...profile, [name]: value });
   };
 
-  // ===== Handle Image Change =====
+
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -27,16 +27,16 @@ const EditProfile = () => {
     setProfile({ ...profile, image: imageURL });
   };
 
-  // ===== Handle Save =====
+
   const handleSave = () => {
     console.log("Updated Profile:", profile);
-    // later → API call
+    
   };
 
   return (
     <div className="max-w-screen-xl space-y-8 mx-4 p-4">
 
-      {/* ===== Tabs ===== */}
+     
       <div className="flex gap-8 text-lg text-gray-400 border-b border-blue-900 pb-2 pt-4">
         <button className="text-white border-b-2 border-blue-500 pb-2">
           Profile
@@ -44,7 +44,7 @@ const EditProfile = () => {
         <button>Password Settings</button>
       </div>
 
-      {/* ===== Profile Image ===== */}
+     
       <div>
         <p className="text-sm text-gray-400 mb-3">Profile Image</p>
         <div className="relative w-fit">
@@ -66,7 +66,6 @@ const EditProfile = () => {
         </div>
       </div>
 
-      {/* ===== Form ===== */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
         <Input
@@ -98,7 +97,7 @@ const EditProfile = () => {
         />
       </div>
 
-      {/* ===== Save Button ===== */}
+     
       <div className="flex justify-center pt-6">
         <button
           onClick={handleSave}

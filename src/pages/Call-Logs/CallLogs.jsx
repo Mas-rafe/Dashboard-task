@@ -48,22 +48,22 @@ const CallLogs = () => {
     return (
         <div className="grid grid-cols-2 min-w-screen   text-white px-6 gap-6">
 
-             <input
-                    type="text"
-                    placeholder="Search by phone number, issue type..."
-                    className=" mt-2 ml-2 h-16 px-2 rounded-lg text-black border-blue-600 bg-[#0F172B80]"
-                />
+            <input
+                type="text"
+                placeholder="Search by phone number, issue type..."
+                className=" mt-2 ml-2 h-16 px-2 rounded-lg text-black border-blue-600 bg-[#0F172B80]"
+            />
 
-                   <div className="flex items-center justify-between mx-6 my-6 list-none">
-                    <li className="p-4 w-44 text-center bg-[#0F172B80]">All types</li>
-                    <li className="p-4  w-44 text-center bg-[#0F172B80]">All Issues</li>
-                    <li className="p-4  w-44 text-center bg-[#0F172B80]">Today</li>
-                </div>
-            {/* Left */}
+            <div className="flex items-center justify-between mx-6 my-6 list-none">
+                <li className="p-4 w-44 text-center bg-[#0F172B80]">All types</li>
+                <li className="p-4  w-44 text-center bg-[#0F172B80]">All Issues</li>
+                <li className="p-4  w-44 text-center bg-[#0F172B80]">Today</li>
+            </div>
+
             <div className=" bg-[#0F172B80] rounded-lg p-4 overflow-y-auto">
                 <h2 className="text-xl font-semibold mb-4">Call List</h2>
 
-               
+
 
                 <div className="space-y-4">
                     {callData.map((call) => (
@@ -78,16 +78,16 @@ const CallLogs = () => {
 
 
 
-            {/* Right */}
-            <div className="">
-             
-                <div className=" bg-[#0F172B80] rounded-lg p-4 overflow-y-auto">
 
 
-                    <CallDetails call={selectedCall} />
-                </div>
+
+            <div className=" bg-[#0F172B80] rounded-lg p-4 overflow-y-auto">
+
+
+                <CallDetails call={selectedCall} />
             </div>
         </div>
+
     );
 };
 

@@ -2,7 +2,7 @@ import { Phone, Bot, Repeat, Calendar, XCircle, Clock } from "lucide-react"
 import CallTrendChart from "./CallTrendChart"
 
 const DashboardOverview = () => {
-  // ✅ JSON DATA
+
   const stats = [
     {
       title: "Total Calls Today",
@@ -49,6 +49,10 @@ const DashboardOverview = () => {
   ]
 
   const activities = [
+    "AI booked appointment for iPhone 13 screen repair",
+    "Warm transfer to technician - Software issue",
+    "Quote provided for iPad battery replacement",
+    "Call dropped after 12 seconds",
     "AI booked appointment for iPhone 13 screen repair",
     "Warm transfer to technician - Software issue",
     "Quote provided for iPad battery replacement",

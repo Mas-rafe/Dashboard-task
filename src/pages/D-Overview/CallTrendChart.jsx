@@ -21,7 +21,7 @@ const data = [
 const CallTrendChart = () => {
   return (
     <div className="bg-[#0F172B80] rounded-xl p-6 w-full h-[350px] text-white">
-      {/* Header */}
+      
       <div className="flex justify-between mb-4">
         <div>
           <h2 className="text-lg font-semibold">
@@ -37,7 +37,7 @@ const CallTrendChart = () => {
         </button>
       </div>
 
-      {/* Chart */}
+      
       <ResponsiveContainer width="100%" height="80%">
         <AreaChart data={data}>
           <defs>

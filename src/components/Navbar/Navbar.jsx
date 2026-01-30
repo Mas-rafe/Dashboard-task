@@ -9,7 +9,7 @@ const Navbar = ({ title }) => {
             <div className="flex items-center gap-4">
                 <MdOutlineNotificationsNone className="text-white" size={32}/>
                 <img
-                    src="https://i.pravatar.cc/40"
+                    src="https://i.pravatar.cc/40" alt="avatar"
                     className="w-10 h-10 rounded-full"
                 />
                 
