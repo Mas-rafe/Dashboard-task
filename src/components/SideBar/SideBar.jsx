@@ -3,6 +3,7 @@ import { RiHome4Fill } from "react-icons/ri";
 import { IoCallOutline } from "react-icons/io5";
 import { FiCalendar } from "react-icons/fi";
 import { LuSettings } from "react-icons/lu";
+import { Link } from "react-router";
 
 
 const SideBar = () => {
@@ -24,11 +25,11 @@ const SideBar = () => {
             </div>
             <section className="section text-[#FFFFFF] text-base text-start   ">
 
-                <ul className=" space-y-6 ">
-                    <li className="overview  ">  <span className="flex items-center gap-2"> <RiHome4Fill size={30}  />  Dashboard Overview</span></li>
-                    <li className="logs "> <span className="flex items-center gap-2"> <IoCallOutline size={30}  />  Call Logs</span></li>
-                    <li className="appointments"><span className="flex items-center gap-2"> <FiCalendar size={30}  />  Appointments</span></li>
-                    <li className="Settings"><span className="flex items-center gap-2"> <LuSettings size={30}  />  Settings</span></li>
+                <ul className=" space-x-12  ">
+                    <Link to="/dashboard"> <li className="overview  ">  <span className="flex items-center gap-2"> <RiHome4Fill size={30} />  Dashboard Overview</span></li></Link>
+                    <Link to="/calllogs"> <li className="logs "> <span className="flex items-center gap-2"> <IoCallOutline size={30} />  Call Logs</span></li></Link>
+                    <Link to="/appointments"><li className="appointments"><span className="flex items-center gap-2"> <FiCalendar size={30} />  Appointments</span></li></Link>
+                    <Link to="settings"><li className="Settings"><span className="flex items-center gap-2"> <LuSettings size={30} />  Settings</span></li></Link>
                 </ul>
             </section>
         </div>
