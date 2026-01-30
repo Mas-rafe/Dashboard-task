@@ -73,7 +73,7 @@ const Appointments = () => {
   };
 
   return (
-    <div className="space-y-6 min-h-screen">
+    <div className="space-y-6 min-h-screen px-4">
 
      
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

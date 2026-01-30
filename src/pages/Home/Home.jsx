@@ -12,7 +12,7 @@ const Home = () => {
       <SideBar />
       <div className="homecontainer">
         <Navbar title={title} />
-        <div className="bg-gradient-to-tl from-[#020618] via-[#162456] to-[#0F172B] min-h-screen">
+        <div className="pt-4 bg-gradient-to-tl from-[#020618] via-[#162456] to-[#0F172B] min-h-screen">
           <Outlet />
         </div>
         

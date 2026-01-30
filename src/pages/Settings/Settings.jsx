@@ -1,3 +1,6 @@
+import { LuSettings } from "react-icons/lu";
+import { Link } from "react-router";
+
 const Settings = () => {
  
   const data = {
@@ -11,27 +14,30 @@ const Settings = () => {
   };
 
   return (
-    <div className=" space-y-6">
+    <div className=" max-w-screen-md space-y-6 mx-4 p-4">
 
      
-      <div className="flex gap-6 text-sm text-gray-400">
+      <div className="flex gap-6 text-lg text-gray-400">
         <button className="text-white border-b-2 border-blue-500 pb-1">
           Profile
         </button>
         <button>Password Settings</button>
+       
       </div>
 
     
-      <div className="bg-[#0b1633] p-6 rounded-xl border border-blue-900">
+      <div className=" p-6 ">
         <div className="flex items-center gap-4 mb-6">
           <img
             src={data.profile.image}
             alt="profile"
             className="w-16 h-16 rounded-full object-cover"
           />
+          <Link to="edit-profile">
           <button className="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-lg">
             Edit Profile
           </button>
+          </Link>
         </div>
 
         <div className="space-y-4 text-sm">

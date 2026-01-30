@@ -8,7 +8,7 @@ const CallList = ({ call, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="flex justify-between items-center bg-[#0F172A] p-3 rounded-lg cursor-pointer hover:bg-[#334155]"
+      className="flex justify-between items-center bg-[#0F172A] p-3 rounded-lg cursor-pointer hover:bg-[#334155] backdrop:"
     >
       <div>
         <div className="flex items-center gap-2">

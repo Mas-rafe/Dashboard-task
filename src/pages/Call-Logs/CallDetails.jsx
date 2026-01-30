@@ -5,6 +5,7 @@ const CallDetails = ({ call }) => {
 
   return (
     <div className="space-y-4">
+       
       <h2 className="text-xl font-semibold">Call Details</h2>
       <div className="space-y-2">
         <p><strong>Phone Number:</strong> {call.phone}</p>

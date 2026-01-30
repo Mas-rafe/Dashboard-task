@@ -30,6 +30,7 @@ const SideBar = () => {
                     <Link to="/calllogs"> <li className="logs "> <span className="flex items-center gap-2"> <IoCallOutline size={30} />  Call Logs</span></li></Link>
                     <Link to="/appointments"><li className="appointments"><span className="flex items-center gap-2"> <FiCalendar size={30} />  Appointments</span></li></Link>
                     <Link to="settings"><li className="Settings"><span className="flex items-center gap-2"> <LuSettings size={30} />  Settings</span></li></Link>
+                    
                 </ul>
             </section>
         </div>

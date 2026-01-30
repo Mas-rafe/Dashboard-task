@@ -1,4 +1,5 @@
 import { Phone, Bot, Repeat, Calendar, XCircle, Clock } from "lucide-react"
+import CallTrendChart from "./CallTrendChart"
 
 const DashboardOverview = () => {
   // ✅ JSON DATA
@@ -69,7 +70,7 @@ const DashboardOverview = () => {
         {stats.map((item, i) => (
           <div
             key={i}
-            className="bg-slate-900 border border-slate-800 rounded-xl p-5 flex justify-between items-start"
+            className="bg-[#0F172B80] border border-slate-800 rounded-xl p-5 flex justify-between items-start"
           >
             <div>
               <p className="text-sm text-slate-400">{item.title}</p>
@@ -85,15 +86,15 @@ const DashboardOverview = () => {
       </div>
 
       {/* Chart*/}
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 h-72 flex items-center justify-center">
-        <p className="text-slate-400">Chart goes here</p>
+      <div >
+        <CallTrendChart />
       </div>
 
       
       <div className="grid grid-cols-2 gap-6">
 
         {/* Recent Activity */}
-        <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
+        <div className="bg-[#0F172B80] border border-slate-800 rounded-xl p-6">
           <h2 className="font-semibold mb-4">Recent Activity</h2>
           <div className="space-y-3">
             {activities.map((act, i) => (
@@ -108,7 +109,7 @@ const DashboardOverview = () => {
         </div>
 
         {/* Top Repairs */}
-        <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
+        <div className="bg-[#0F172B80] border border-slate-800 rounded-xl p-6">
           <h2 className="font-semibold mb-4">Top Repair Requests</h2>
 
           <div className="space-y-4">
